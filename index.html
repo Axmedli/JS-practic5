@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script defer src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Home</title>
+</head>
+
+<body class="w-full min-h-screen h-full">
+  <div class="max-w-[1440px] w-full mx-auto">
+<!--------------------------------navbar---------------------- -->
+    <div  iv class="flex justify-between items-center py-4 px-6">
+
+      <p class="inter-bold text-2xl">Exclusive</p>
+
+      <div class="flex items-center gap-4">
+        
+        <div class="relative">
+          <input class="py-2.5 pr-15 pl-5 outline-none bg-[#F5F5F5] inter" type="text" placeholder="What are you looking for?"/>
+          <button class="absolute right-2 right-1 top-2.25">
+            <img class="pr-0.5" src="./assets/icons/search.png" alt="search.pgn"/>
+          </button>
+        </div>
+
+        <img class="w-6 h-6 cursor-pointer" src="./assets/icons/basket.png" alt="basket"/>
+        <img class="w-6 h-6 cursor-pointer" src="./assets/icons/user.png" alt="user"/>
+      </div>
+    </div>
+    
+    <hr class=" text-gray-300 m-0 p-0">
+<!--------------------------------Categories---------------------- -->
+    <div class="mt-18 px-6">
+        <div class=" flex items-center gap-4">
+            <div class="w-5 h-10 bg-[#DB4444] rounded"></div>
+            <p class="text-[#DB4444] inter-semibold">Categories</p>
+        </div>
+        <h1 class="inter-semibold text-4xl pt-5">Browse By Category</h1>
+
+        <div class="pt-15 flex gap-7.5">
+            <div class="relative">
+                <img class="border-2 border-gray-300 rounded px-14.25 pt-6.25 pb-16" src="./assets/icons/phone.png" alt="phone.png">
+                <p class="absolute inter top-24.25 pl-17">Tech</p>
+
+            </div>
+            <div class="relative">
+                <img class="border-2 border-gray-300 rounded px-14.25 pt-6.25 pb-16" src="./assets/icons/computer.png" alt="computer.png">
+                <p class="absolute inter top-24.25 pl-15">Fashion</p>
+            </div>
+            <div class="relative">
+                <img class="border-2 border-gray-300 rounded px-14.25 pt-6.25 pb-16" src="./assets/icons/smartWatch.png" alt="smartWatch.png">
+                <p class="absolute inter top-24.25 pl-14.5">Furniture</p>
+            </div>
+        </div>
+        <hr class="text-gray-300 mt-29.75">
+    </div>
+<!--------------------------------Products---------------------- -->
+    <div class="mt-18 px-6">
+        <div class=" flex items-center gap-4">
+            <div class="w-5 h-10 bg-[#DB4444] rounded"></div>
+            <p class="text-[#DB4444] inter-semibold">Our Products</p>
+        </div>
+        <h1 class="inter-semibold text-4xl pt-5">Explore Our Products</h1>
+
+        <div id="productsContainer" class="w-full  grid grid-cols-4 gap-7.5 pt-15"></div>
+
+        <div class="flex justify-end items-center gap-4 pt-15">
+            <button class="hover:bg-[#DB4444] rounded border py-4 px-12 inter-medium text-black cursor-pointer active:scale-95 hover:text-white transition duration-150">View More</button>
+
+            <button class="ml-137.5">
+                <img class="bg-[#F5F5F5] p-3 rounded-full cursor-pointer active:scale-95 transition duration-150" src="./assets/icons/upArrow.png" alt="upArrow.png">
+            </button>
+        </div>
+
+    </div>
+
+<!--------------------------------Info---------------------- -->
+    <div class="flex justify-center items-center gap-22 mt-57.75">
+    <div class="flex flex-col items-center text-center">
+        <img src="./assets/icons/delivery.png" alt="delivery.png">
+        <h2 class="inter-semibold mt-2">FREE AND FAST DELIVERY</h2>
+        <p class="inter">Free delivery for all orders over $140</p>
+    </div>
+    
+    <div class="flex flex-col items-center text-center">
+        <img src="./assets/icons/services.png" alt="services.png">
+        <h2 class="inter-semibold mt-2">QUALITY SERVICES</h2>
+        <p class="inter">Professional service for all your needs</p>
+    </div>
+
+    <div class="flex flex-col items-center text-center">
+        <img src="./assets/icons/guarantee.png" alt="guarantee.png">
+        <h2 class="inter-semibold mt-2">GUARANTEED SATISFACTION</h2>
+        <p class="inter">We guarantee satisfaction on all products</p>
+    </div>
+</div>
+
+<!--------------------------------bottom------------------------->
+
+
+</div>
+<div class="bg-black mt-35">
+  <div class="flex justify-between gap-21.75">
+    <div class="ml-33.75 mt-20 block">
+      <h3 class="text-white inter-bold mb-6">Exclusive</h3>
+      <p class=" text-white inter-medium mb-6">Subscribe</p>
+      <p class="text-white inter-light mb-4">Get 10% off your first order</p>
+
+      <div class="relative mb-43">
+        <input class="py-3 pl-4 outline-none bg-black inter border border-white text-white rounded" type="email" placeholder="Enter your email"/>
+        <button class="absolute right-3.75 top-3.5 ">
+          <img src="./assets/icons/vector.png" alt="vector.png"/>
+        </button>
+      </div>
+    </div>
+
+    <div>
+      <div class="mt-20 block">
+        <h3 class="text-white inter-bold mb-6">Support</h3>
+        <p class=" text-white inter-light mb-6">111 Bijoy sarani, Dhaka,<br>DH 1515, Bangladesh.</p>
+        <p class="text-white inter-light mb-4">exclusive@gmail.com</p>
+        <p class="text-white inter-light mb-4">+88015-88888-9999</p>
+      </div>
+    </div>
+
+    <div>
+      <div class="mt-20 block">
+        <h3 class="text-white inter-bold mb-6">Account</h3>
+        <p class=" text-white inter-light mb-6">My Account</p>
+        <p class="text-white inter-light mb-4">Login / Register</p>
+        <p class="text-white inter-light mb-4">Basket</p>
+      </div>
+    </div>
+
+    <div>
+      <div class="mt-20 block">
+        <h3 class="text-white inter-bold mb-6">Quick Link</h3>
+        <p class=" text-white inter-light mb-6">Privacy Policy</p>
+        <p class="text-white inter-light mb-4">Terms Of Use</p>
+      </div>
+    </div>
+
+    <div>
+      <div class="mr-33.75 mt-20 block">
+        <h3 class="text-white inter-bold mb-6">Download App</h3>
+        <p class="text-[#FAFAFA] inter-light mb-2">Save $3 with App New User Only</p>
+        <img src="./assets/images/download.png" alt="download.png">
+        <div class="flex items-center gap-6 mt-6"> 
+          <img src="./assets/icons/Icon-Facebook.png" alt="Icon-Facebook.png">
+          <img src="./assets/icons/Icon-Twitter.png" alt="Icon-Twitter.png">
+          <img src="./assets/icons/icon-instagram.png" alt="icon-instagram.png">
+          <img src="./assets/icons/Icon-Linkedin.png" alt="Icon-Linkedin.png">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="border-t border-gray-500">
+  <div class="flex justify-center pt-4 pb-6">
+      <img class="text-center  pr-1.5" src="./assets/icons/icon-copyright.png" alt="icon-copyright.png">
+      <p class="text-white inter-light">Copyright Rimel 2022. All right reserved</p>
+  </div>
+</div>
+
+</body>
+
+</html>
