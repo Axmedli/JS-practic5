@@ -10,24 +10,37 @@
     <title>Login</title>
 </head>
 
-<body class="w-full min-h-screan h-full">
-
+<body id="body" class="w-full min-h-screan h-full">
+    
+        <div class="relative">
+            <button id="modeBtn" class="absolute top-2 right-2 border p-4 active:scale-95 hover:bg-[#DB4444] hover:text-white transition duration-150">Enable Darkmode</button>
+        </div>
     <div class="max-w-[1440px] w-full h-full mx-auto">  
+
+
         <div class="flex items-center gap-[130px]">
             <img src="./assets/images/authimg.png" alt="authimg.png">
 
             <div class="flex flex-col">
-                <h1 class="inter-medium text-[36px]">Log in to Exclusivec</h1>
-                <p class="inter mt-6">Enter your details below</p>
+
+
+                <h1 id="loginh1" class="inter-medium text-[36px]">Log in to Exclusivec</h1>
+                <p id="loginp1" class="inter mt-6">Enter your details below</p>
 
                 <div class="mt-12 mb-10 flex flex-col gap-10">
                     <input class="border-b borer-black pb-2" placeholder="Email" id="loginEmailInput">
                     <input class="border-b borer-black pb-2" placeholder="Password" type="password" id="loginPasswordInput">
+                    <div class="flex">
+                        <input class="mr-3" type="checkbox" name="" id="remember">
+                        <p id="loginp2" >Remember Me</p>
+
+                    </div>
                 </div>
+
 
                 <button id="loginBtn" class="hover:bg-[#DB4444] border-1 py-4 inter-medium text-black cursor-pointer active:scale-95 hover:text-white transition duration-150">Login</button>
 
-                <a class="inter-light mt-4" href="./register.html">Don’t have an account? <span class="inter-medium underline">Register</span></a>
+                <a id="registerPage" class="inter-light mt-4" href="./register.html">Don’t have an account? <span class="inter-medium underline">Register</span></a>
             </div>
         </div>
     </div>
